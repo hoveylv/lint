@@ -1,0 +1,5 @@
+{
+  "root": true,
+  "extends": "@hovey/eslint-config-vue",
+  "rules": {}
+}
