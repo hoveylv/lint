@@ -7,12 +7,12 @@ module.exports = {
   reportUnusedDisableDirectives: true,
   extends: [
     './standard',
-    'plugin:prettier/recommended',
     'plugin:import/recommended',
     'plugin:eslint-comments/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
     'plugin:markdown/recommended',
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: [
     '*.min.*',
@@ -46,7 +46,7 @@ module.exports = {
     // force exclude
     '**/.vitepress/cache',
   ],
-  plugins: ['html', 'unicorn', 'no-only-tests', 'unused-imports'],
+  plugins: ['html', 'unicorn', 'no-only-tests', 'unused-imports', 'prettier'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs'] },
@@ -183,7 +183,7 @@ module.exports = {
     },
     {
       // Code blocks in markdown file
-      files: ['**/*.md/*.*'],
+      files: ['**/*.md/*.js'],
       rules: {
         '@typescript-eslint/no-redeclare': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
@@ -207,8 +207,6 @@ module.exports = {
     },
   ],
   rules: {
-    'prettier/prettier': 'error',
-
     // import
     'import/order': 'error',
     'import/first': 'error',
@@ -247,7 +245,7 @@ module.exports = {
     // 'comma-dangle': ['error', 'always-multiline'],
     'no-constant-condition': 'warn',
     'no-debugger': 'error',
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    // 'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-cond-assign': ['error', 'always'],
     'func-call-spacing': 'off',
     'key-spacing': ['error', { beforeColon: false, afterColon: true }],
@@ -331,7 +329,7 @@ module.exports = {
     'prefer-spread': 'error',
     'prefer-template': 'error',
     'template-curly-spacing': 'error',
-    'arrow-parens': ['error', 'as-needed'],
+    // 'arrow-parens': ['error', 'as-needed'],
     'generator-star-spacing': 'off',
     'spaced-comment': [
       'error',

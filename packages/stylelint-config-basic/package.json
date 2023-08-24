@@ -1,6 +1,6 @@
 {
   "name": "@hovey/stylelint-config-basic",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "description": "",
   "author": "hovey",
   "license": "MIT",
@@ -30,5 +30,8 @@
     "eslint": "^8.47.0",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

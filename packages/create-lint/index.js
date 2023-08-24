@@ -70,15 +70,13 @@ async function main() {
   // 获取默认配置
   const tplPath = path.resolve(__dirname, 'template')
   const results = Object.values(options.result).flat()
-  const configs = results.map((configPath) => {
+  const configs = results.map(configPath => {
     const config = require(path.resolve(tplPath, configPath, 'config.js'))
     return config(options)
   })
 
   // 安装依赖包
-  const pkgNames = Array.from(
-    new Set(configs.map((config) => config.pkg).flat())
-  )
+  const pkgNames = Array.from(new Set(configs.map(config => config.pkg).flat()))
   await installPackage(pkgNames, {
     dev: true,
     cwd: options.cwd,
@@ -90,10 +88,10 @@ async function main() {
 
   // 生成配置文件
   const configFiles = Array.from(
-    new Set(configs.map((config) => config.configFile).flat())
+    new Set(configs.map(config => config.configFile).flat())
   )
   await Promise.all(
-    configFiles.map((configFile) =>
+    configFiles.map(configFile =>
       fs.copyFile(
         path.resolve(tplPath, configFile),
         path.resolve(options.cwd, configFile.slice(configFile.indexOf('/') + 1))
@@ -101,11 +99,10 @@ async function main() {
     )
   )
 
-  // eslint-disable-next-line no-console
   console.log(blue('✨ created success. ✨'))
 }
 
-main().catch((e) => {
+main().catch(e => {
   console.error(e)
   process.exit(1)
 })

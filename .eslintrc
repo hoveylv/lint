@@ -1,4 +1,5 @@
 {
   "root": true,
-  "extends": "@hovey/eslint-config-typescript"
+  "extends": "@hovey/eslint-config-basic",
+  "rules": {}
 }

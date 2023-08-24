@@ -1,7 +1,7 @@
 const { spawnSync } = require('node:child_process')
 
 // https://github.com/changesets/changesets
-module.exports = (options) => {
+module.exports = options => {
   return {
     pkg: ['@changesets/cli'],
     configFile: [],

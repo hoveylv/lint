@@ -2,7 +2,7 @@ const { setPkg } = require('../../utils/index')
 
 // https://github.com/vitest-dev/vitest
 // https://github.com/vuejs/test-utils
-module.exports = (options) => {
+module.exports = options => {
   return {
     pkg: [
       'vitest',
