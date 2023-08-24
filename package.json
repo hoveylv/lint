@@ -1,0 +1,34 @@
+{
+  "name": "@hovey/lint",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {},
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "@hovey/eslint-config-basic": "workspace:*",
+    "@hovey/eslint-config-react": "workspace:*",
+    "@hovey/eslint-config-typescript": "workspace:*",
+    "@hovey/eslint-config-vue": "workspace:*",
+    "@hovey/stylelint-config-basic": "workspace:*",
+    "eslint": "^8.47.0",
+    "lint-staged": "^14.0.1",
+    "postcss": "^8.4.28",
+    "prettier": "^3.0.2",
+    "simple-git-hooks": "^2.9.0",
+    "stylelint": "^15.10.3",
+    "typescript": "^5.1.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
