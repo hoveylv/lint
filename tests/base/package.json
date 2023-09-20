@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@hovey/eslint-config-basic": "workspace:*",
-    "@hovey/stylelint-config-basic": "workspace:*",
+    "@hovey/stylelint-config": "workspace:*",
     "eslint": "^8.47.0",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",

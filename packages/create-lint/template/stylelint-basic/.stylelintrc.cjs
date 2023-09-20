@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: '@hovey/stylelint-config-basic',
+  extends: '@hovey/stylelint-config',
 }

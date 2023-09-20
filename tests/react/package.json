@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@hovey/eslint-config-react": "workspace:*",
-    "@hovey/stylelint-config-basic": "workspace:*",
+    "@hovey/stylelint-config": "workspace:*",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",

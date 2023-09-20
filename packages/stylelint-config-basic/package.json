@@ -1,6 +1,6 @@
 {
-  "name": "@hovey/stylelint-config-basic",
-  "version": "2.0.0",
+  "name": "@hovey/stylelint-config",
+  "version": "3.0.1",
   "description": "",
   "author": "hovey",
   "license": "MIT",

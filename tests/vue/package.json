@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@hovey/eslint-config-vue": "workspace:*",
-    "@hovey/stylelint-config-basic": "workspace:*",
+    "@hovey/stylelint-config": "workspace:*",
     "@vitejs/plugin-vue": "^4.2.3",
     "eslint": "^8.47.0",
     "postcss": "^8.4.25",
